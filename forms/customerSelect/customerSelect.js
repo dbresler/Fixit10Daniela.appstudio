@@ -6,7 +6,7 @@ let customerInfo = ['']
 customerSelect.onshow=function(){
     drpCustomers.clear()
     query = "SELECT * FROM customer"
-    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=amj88804&pass=RDJ!&database=amj88804&query=" + query)
+    req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=dsb38658&pass=GOJAYS!&database=dsb38658&query=" + query)
 
     if (req.status == 200) {   
       results = JSON.parse(req.responseText)

@@ -6,7 +6,7 @@ let customerInfo1 = ['']
 customerDelete.onshow=function(){
   drpDelete.clear()
     query1 = "SELECT * FROM customer"
-    req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=amj88804&pass=RDJ!&database=amj88804&query=" + query)
+    req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=dsb38658&pass=GOJAYS!&database=dsb38658&query=" + query)
 
 if (req1.status == 200) { 
     customerInfo1 = JSON.parse(req1.responseText)
@@ -30,7 +30,7 @@ drpDelete.onclick=function(){
        NSB.MsgBox("That customer name is not in the database.")
    else if (found == true) {
       let query1 = "DELETE FROM customer WHERE name = " + '"' + deletedCustomer + '"'
-      req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=amj88804&pass=RDJ!&database=amj88804&query=" + query)
+      req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=dsb38658&pass=GOJAYS!&database=dsb38658&query=" + query)
       if (req1.status == 200) {
             if (req1.responseText == 500)  
                 NSB.MsgBox(`You have successfully deleted  ${deletedCustomer}.`)
@@ -49,7 +49,7 @@ drpDelete.onclick=function(){
 
 
   query1 = `SELECT * FROM customer`
-  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=amj88804&pass=RDJ!&database=amj88804&query=" + query)
+  req1 = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=dsb38658&pass=GOJAYS!&database=dsb38658&query=" + query)
   if (req1.status == 200) {
     results = JSON.parse(req.responseText)
     console.log(results)
